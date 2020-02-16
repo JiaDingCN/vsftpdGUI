@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainPanelController">
+   <children>
+      <ChoiceBox fx:id="anon_enable_ChooseBox" layoutX="385.0" layoutY="58.0" prefHeight="26.0" prefWidth="104.0" />
+      <Label layoutX="84.0" layoutY="61.0" text="anonymous_enable">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font></Label>
+      <ChoiceBox fx:id="local_enable_Choosebox" layoutX="385.0" layoutY="240.0" prefHeight="26.0" prefWidth="104.0" />
+      <Label layoutX="88.0" layoutY="243.0" text="local_enable">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font></Label>
+      <ChoiceBox fx:id="write_enable_Choosebox" layoutX="385.0" layoutY="282.0" prefHeight="26.0" prefWidth="104.0" />
+      <Label layoutX="86.0" layoutY="285.0" text="write_enable">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font></Label>
+      <ChoiceBox fx:id="anon_upload_enable_Choosebox" layoutX="385.0" layoutY="319.0" prefHeight="26.0" prefWidth="104.0" />
+      <Label layoutX="88.0" layoutY="322.0" text="anon_upload_enable">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font></Label>
+      <ChoiceBox fx:id="anon_mkdir_write_enable_Choosebox" layoutX="385.0" layoutY="359.0" prefHeight="26.0" prefWidth="104.0" />
+      <Label layoutX="85.0" layoutY="362.0" text="anon_mkdir_write_enable">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font></Label>
+      <Button fx:id="refreshButton" layoutX="380.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#refreshConfig" text="submit">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font></Button>
+      <Button fx:id="cancelButton" layoutX="112.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#Exit" text="cancel">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font></Button>
+      <ChoiceBox fx:id="no_anon_passwd_Choosebox" layoutX="385.0" layoutY="96.0" prefHeight="26.0" prefWidth="104.0" />
+      <Label layoutX="85.0" layoutY="99.0" text="no_anon_password">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="168.0" text="anon_root：">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font></Label>
+      <Label layoutX="89.0" layoutY="208.0" text="local_root：">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="anon_changedirButton" layoutX="384.0" layoutY="165.0" mnemonicParsing="false" onMouseClicked="#anon_changeDir" text="Change dirctory">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font></Button>
+      <Button fx:id="local_changeDirButton" layoutX="385.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#local_changeDir" text="Change dirctory">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font></Button>
+      <Label fx:id="anon_rootText" layoutX="190.0" layoutY="170.0" prefHeight="16.0" prefWidth="192.0">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font></Label>
+      <Label fx:id="local_rootText" layoutX="190.0" layoutY="210.0" prefHeight="16.0" prefWidth="192.0">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font></Label>
+      <Label layoutX="54.0" layoutY="135.0" prefHeight="20.0" prefWidth="345.0" text="ftp_username(used for anonymous login):">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ftp_usernameTextField" layoutX="384.0" layoutY="132.0" prefHeight="26.0" prefWidth="116.0" />
+   </children>
+</AnchorPane>
